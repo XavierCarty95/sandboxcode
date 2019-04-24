@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="key.js"></script>
+    <script>
+    
+        var xhttp 
+        window.onload = function (){ 
+            
+            xhttp = new XMLHttpRequest()
+            var url = "https://makeapassword.org/api/v1/passphrase/plain?pc=1&wc=3&sp=n";
+            xhttp.onreadystatechange = process
+            xhttp.open("POST", url, true)
+            xhttp.setRequestHeader('wc', '1')
+            xhttp.setRequestHeader('pc', '1')
+            xhttp.setRequestHeader('sp', 'n')
+            xhttp.send()
+        }
+        
+        function process()
+        {
+            if(xhttp.readyState == 4 && xhttp.status == 200)
+            {
+               alert(xhttp.responseText)
+            }
+       
+        }
+        
+        
+    </script>
+ 
+</head>
+<body>
+   
+
+</body>
+</html>

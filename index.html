@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="key.js"></script>
+    <script>
+    
+        var xhttp 
+        window.onload = function (){ 
+            
+            
+            xhttp = new XMLHttpRequest()
+            document.getElementById('btnGetInfo').addEventListener('click' , getService)
+                
+        }
+        
+        function getService(e){
+            var address = document.getElementById('address').value;
+             
+            var url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + address + "&sensor=false " + key
+            xhttp.onreadystatechange = process
+            console.log(url)
+            xhttp.open("GET",url, true)
+            xhttp.send()
+        }
+        
+        function process()
+        {
+            if(xhttp.readyState== 4 && xhttp.status == 200)
+            {
+              document.getElementById("result").innerHTML = xhttp.responseText; 
+           }
+       
+        }
+        
+        
+    </script>
+ 
+</head>
+<body>
+   
+    <label for="address"> Address :  </label>
+    <input type="text" id="address"/> </input>
+    <button id="btnGetInfo"> Get Address Info </button>
+    <div id = "result"> </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Date</title>
+    <style>
+        .blue {
+            color: blue;
+            font-weight: bold;
+        }
+        
+        .red { color: red;
+               font-weight:normal;
+               text-decoration: overline;
+            
+        }
+    </style>
+    <script >
+        window.onload=function(){
+            
+          var theList = document.getElementById("myList");
+          var node = document.createElement("LI")
+          var text = document.createTextNode("Yes")
+          
+          node.appendChild(text)
+        //   console.log(node)
+          theList.appendChild(node)
+          
+          var node2 = document.createElement("LI")
+          var text2 = document.createTextNode("Scandal")
+          node2.appendChild(text2)
+          theList.appendChild(node2)
+         
+         theList.removeChild(theList.childNodes[1])
+          
+        //   content.setAttribute('class','red')
+           
+           
+           
+        }
+        
+        
+    </script>
+</head>
+<body>
+    <ul id="myList"> 
+      <li> Journey </li>
+      <li> REO Speedwagon </li>
+    
+    </ul>
+    </div>
+    
+</body>
+</html>

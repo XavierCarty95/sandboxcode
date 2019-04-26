@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script >
+        window.onload=function(){
+            var d = new Date(2018,1,5, 12,00);
+            document.getElementById('result').innerHTML = d; 
+            console.log(d.getDate());
+            
+        var c = new Date();
+        document.getElementById('result').innerHTML = Date.now(); 
+        }
+        
+        var d = Date.now() - (365 * 24 * 60 * 60)
+        
+        
+        
+    </script>
+</head>
+<body>
+    <div id= "result" ></div>
+    
+</body>
+</html>

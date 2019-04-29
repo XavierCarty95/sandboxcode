@@ -22,7 +22,17 @@ class Tutorial {
              
              String helloWorld = "Hello World"
              System.out.printlin(helloWorld)
+             
+             print("Hello World");
          }
      }
+     
+     
+     // return-type , identifier , parameters 
+     
+     static void print(String s){
+         System.out.println(s)
+     }
+     
     
 }

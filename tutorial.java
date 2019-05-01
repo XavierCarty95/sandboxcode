@@ -31,8 +31,12 @@ class Tutorial {
      // return-type , identifier , parameters 
      
      static void print(String s){
-         System.out.println(s)
+         System.out.println(s);
      }
      
+     static int add(int a, int b){
+         int c = a + b; 
+         return c; 
+     }
     
 }

@@ -37,7 +37,7 @@ def race():
             xcor = current_turtle.xcor()
             if(xcor >= finishline):
                 winner = True
-                winner.color = current_turtle.color()
+                winner_color = current_turtle.color()
                 print('The winner is' , winner_color[0])
         
 
